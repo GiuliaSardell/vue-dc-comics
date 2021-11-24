@@ -33,21 +33,19 @@ export default {
 
 <style lang="scss">
 header{
-  background-color: red;
   
-
   a img{
     width: 80px;
-    margin: 10px;
+    margin: 10px 0;
   }
   ul li{
-    list-style: none;
+    // list-style: none;
+    // display: inline-block;
     margin: 0 10px;
-    display: inline-block;
     font-size: 12px;
     font-weight: bold;
     a{
-      text-decoration: none;
+      // text-decoration: none;
       color: black;
       &:hover{
         color: #0C7CEC;

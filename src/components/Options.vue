@@ -1,10 +1,28 @@
 <template>
-  <div class="options container">
-    <a href="#"><img src="../assets/img/buy-comics-digital-comics.png" alt=""></a>
-    <a href="#"><img src="../assets/img/buy-comics-merchandise.png" alt=""></a>
-    <a href="#"><img src="../assets/img/buy-comics-shop-locator.png" alt=""></a>
-    <a href="#"><img src="../assets/img/buy-comics-subscriptions.png" alt=""></a>
-    <a href="#"><img src="../assets/img/buy-dc-power-visa.svg" alt=""></a>
+  <div class="options">
+    <div class="container">
+      <a href="#">
+        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+        <span>Digital Comics</span>
+      </a>
+      <a href="#">
+        <img src="../assets/img/buy-comics-merchandise.png" alt="">
+        <span>DC Merchandise</span>
+      </a>
+      <a href="#">
+        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+        <span>Subscriptions</span>
+      </a>
+      <a href="#">
+        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+        <span>Comic Shop Locator</span>
+      </a>
+      <a href="#">
+        <img src="../assets/img/buy-dc-power-visa.svg"  alt="">
+        <span>DC Power Visa</span>
+      </a>
+    </div>
+    
   </div>
 </template>
 
@@ -17,7 +35,22 @@ export default {
 <style lang="scss">
 .options{
   background-color: #0C7CEC;
-  height: 100px;
+  .container{
+    padding: 0 20px;
+  }
+  img{
+    width: 40px;
+    vertical-align: middle;
+  }
+  a{
+    margin: 20px 0;
+  }
+  span{
+    text-transform: uppercase;
+    font-size: 12px;
+    color:white;
+    margin: 0 10px;
+  }
 }
 
 </style>
