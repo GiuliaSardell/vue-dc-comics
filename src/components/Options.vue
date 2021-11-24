@@ -33,8 +33,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import "../assets/style/vars.scss";
+
 .options{
-  background-color: #0C7CEC;
+  background-color: $primary-color;
   .container{
     padding: 0 20px;
   }

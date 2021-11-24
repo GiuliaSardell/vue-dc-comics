@@ -77,7 +77,12 @@ export default {
 }
 </script>
 
+
+
 <style lang="scss">
+
+@import "../assets/style/vars.scss";
+
 footer{
   .footer-top{
     background-image: url(../assets/img/footer-bg.jpg);
@@ -134,24 +139,28 @@ footer{
     // height: 80px;
     .container{
       button{
-      padding: 10px;
-      background-color: #303030;
-      border: 1px solid #0C7CEC;
-      color: white;
-      text-transform: uppercase;
-      margin: 30px 0;
-    }
-    span{
-      color: #0C7CEC;
-      text-transform: uppercase;
-      vertical-align: middle;
-      margin: 0 10px;
-    }
-    img{
-      vertical-align: middle;
-      margin: 0 5px;
-      
-    }
+        padding: 10px;
+        background-color: #303030;
+        border: 1px solid $primary-color;
+        color: white;
+        text-transform: uppercase;
+        margin: 30px 0;
+        cursor: pointer;
+          &:hover{
+            background-color: $primary-color;
+          }
+      }
+      span{
+        color: $primary-color;
+        text-transform: uppercase;
+        vertical-align: middle;
+        margin: 0 10px;
+      }
+      img{
+        vertical-align: middle;
+        margin: 0 5px;
+        cursor: pointer;
+      }
     } 
   }
 }
