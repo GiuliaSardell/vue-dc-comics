@@ -1,0 +1,19 @@
+@mixin center($type: 'both') {
+  display: flex;
+  @if $type == 'justify'{
+    justify-content: space-between;
+  } @else if $type == 'align'{
+    align-items: center;
+  } @else if $type == 'both'{
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
+
+//passo la mixin nei componenti come se fosse una funzione
+// prima devo importarla con @import + percorso del file mixin
+// poi devo includerla nei miei stili con @include + nomedellamixin
+// a seconda di quale paramento passo alla mixin nell'include passerò valori diversi
+// se non scrivo niente la mixin passa il valore di default (che io ho definito come 
+// parametro passato come $type nella mixin) 
