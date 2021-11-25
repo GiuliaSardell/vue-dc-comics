@@ -44,7 +44,10 @@
           <li><a href="#">Shop DC Collectibles</a></li>
         </ul>
 
-        <img src="../assets/img/dc-logo-bg.png" alt="">
+        <div class="sfondo">
+
+        </div>
+        <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
 
 
      
@@ -88,10 +91,15 @@ footer{
     background-image: url(../assets/img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    // height: 300px;
-    // padding-top: 40px;
+
     .container{
       align-items: stretch;
+
+      .sfondo{
+        background-image: url(../assets/img/dc-logo-bg.png);
+        width: 450px;
+        background-size: cover;
+      }
       
       .column{
         display: flex;
@@ -103,7 +111,6 @@ footer{
       }
       
       ul{
-        // display: inline-block;
         display: flex;
         flex-direction: column ; 
         margin: 10px 20px;
@@ -126,17 +133,14 @@ footer{
             color: white;
             }
           }
+          
       }
-     
-
      
     }
   }
   
   .footer-bottom{
     background-color: #303030;
-
-    // height: 80px;
     .container{
       button{
         padding: 10px;
@@ -161,6 +165,7 @@ footer{
         margin: 0 5px;
         cursor: pointer;
       }
+      
     } 
   }
 }

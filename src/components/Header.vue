@@ -93,9 +93,10 @@ export default {
 <style lang="scss">
 
 @import "../assets/style/vars.scss";
+@import "../assets/style/generals.scss";
 
 header{
-  
+  background-color: white;
   a img{
     width: 80px;
     margin: 10px 0;
